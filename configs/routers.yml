@@ -1,0 +1,19 @@
+routers:
+  r1:
+    host: 172.20.20.11
+    router_id: 10.255.0.1
+    interfaces:
+      ethernet-1/1: {ipv4: 10.0.12.1/24, ipv6: "2001:db8:12::1/64"}
+      ethernet-1/2: {ipv4: 10.0.13.1/24, ipv6: "2001:db8:13::1/64"}
+  r2:
+    host: 172.20.20.12
+    router_id: 10.255.0.2
+    interfaces:
+      ethernet-1/1: {ipv4: 10.0.12.2/24, ipv6: "2001:db8:12::2/64"}
+      ethernet-1/2: {ipv4: 10.0.23.2/24, ipv6: "2001:db8:23::2/64"}
+  r3:
+    host: 172.20.20.13
+    router_id: 10.255.0.3
+    interfaces:
+      ethernet-1/1: {ipv4: 10.0.23.3/24, ipv6: "2001:db8:23::3/64"}
+      ethernet-1/2: {ipv4: 10.0.13.3/24, ipv6: "2001:db8:13::3/64"}

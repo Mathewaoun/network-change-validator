@@ -4,12 +4,15 @@ topology:
     r1:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux
+      mgmt-ipv4: 172.20.20.11
     r2:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux
+      mgmt-ipv4: 172.20.20.12
     r3:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux
+      mgmt-ipv4: 172.20.20.13
   links:
     - endpoints: ["r1:e1-1", "r2:e1-1"]
     - endpoints: ["r2:e1-2", "r3:e1-1"]
